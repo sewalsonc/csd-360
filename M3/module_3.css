@@ -1,0 +1,28 @@
+/*
+ * Chris Sewalson
+ * CSS for my short webpage
+*/
+
+body {
+    padding: 5%;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, sans-serif, Helvetica;
+    margin: 3%;
+}
+
+#work, #home, #family, #toys {
+    font-style: italic;
+    color:blue;
+}
+
+button {
+    text-align: center;
+    margin-left: 10%;
+}
