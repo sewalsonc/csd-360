@@ -1,0 +1,56 @@
+<!--Chris Sewalson, 3/31/2022, Module4 Assignment-Parentheses
+    This code uses JavaScript and explores the use of parentheses in math. -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Math</h2>
+        <h4>by Chris Sewalson</h4>
+        <h3>Experimenting with parentheses!</h3>
+        <p id="demo"></p>
+        
+        <!--This creates variable i, solves a calculation and writes to page-->
+        <script>
+            let i = 842;
+            document.write(i + i % 3 / 7 - 2 + 7 ** 3);
+        </script>
+        <br><br/>
+        <!--Solves calulation with output 341.14285714285717-->
+        <script>
+            document.write((i + i) % 3 / 7 - 2 + 7 ** 3);
+        </script>
+        <br><br/>
+        <!--Solves calulation with output 1185.4-->
+        <script>
+            document.write(i + i % 3 / (7 - 2) + 7 ** 3);
+        </script>
+        <br><br/>
+        <!--Solves calulation with output 842.0011574074074-->
+        <script>
+            document.write(i + i % 3 / (7 - 2 + 7) ** 3);
+        </script>
+        <br><br/>
+        <!--Solves calulation with output 113.28571428571433-->
+        <script>
+            document.write(i + i % 3 / 7 - (2 + 7) ** 3);
+        </script>
+        <br><br/>
+        <!--Solves calulation with output 343.2-->
+        <script>
+            document.write((i + i) % 3 / (7 - 2) + 7 ** 3);
+        </script>
+        <br><br/>
+        <!--Solves calculation with output 841.75.  Thanks Professor Shelanskey!-->
+        <script>
+            document.write(i + (i % 3) / (7 - (2 + 7)) ** 3);
+        </script>
+        <hr>
+        <ul>
+            <li><a href="..\index.html">Home Page</a></li>
+        </ul>
+    </body>
+</html>
+
+            
+            
+            
