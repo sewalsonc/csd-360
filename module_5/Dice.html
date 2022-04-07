@@ -1,3 +1,9 @@
+<!--
+    Chris Sewalson
+    module 5 html assigment - Dice and Case statement
+    3/21/2022
+-->
+
 <!DOCTYPE html>
 <html lang= "en">
 
@@ -8,6 +14,7 @@
         rel="stylesheet" />
     </head>
     <body>
+        <!--Headers and a description of the dice game-->
         <h2>JavaScript Dice</h2>
         <h4>by Chris Sewalson</h4>
         <h3>Case/Switch Statements</h3>
@@ -15,6 +22,7 @@
         <h5>Roll the dice by clicking the "Roll Dice" button below.  Try for: </h5>
         <h5>Snake eyes - 2 <br>Box Cars - 12 <br>Or roll 7 and you win! </h5>
 
+        <!--JavaScript dice number and total-->
         <script type = "text/javascript">
             function rollDice(){
                 document.form1.dice1.value = Math.floor((Math.random()*6) + 1);
@@ -23,6 +31,8 @@
                 parseInt(document.form1.dice2.value);
                 var total = parseInt(document.form1.dice1.value) +
                 parseInt(document.form1.dice2.value);
+
+                //Switch statement to find snake eyes, box cars or the winning number 7
                 switch(total){
 
                     case 2:
@@ -41,6 +51,8 @@
             }
         </script>
         <form name="form1">
+            <!--Creating the table for dice roll results, the roll
+                button and the total-->
             <table border="1">
                 <tr>
                     <td> Dice 1 </td>
@@ -55,6 +67,8 @@
             </table>
 
             <br>
+
+            <!--A reset button to clear the roll results and total-->
             <input type="button" name="button5" value="Reset" onclick="reset()"/>
         </form>
         <br><br/>
@@ -62,3 +76,5 @@
 
         <!--Link back to the index page-->
         <a href="..\index.html">Back to Index Page</a></li>
+    </body>
+</html>
