@@ -15,6 +15,14 @@ h1 {
 #name{
     text-align: center;
 }
+#FibOut{
+    text-align: center;
+    font-family: Verdana, sans-serif, Helvetica;
+    font-size: x-small;
+}
+#FibLabel{
+    text-align: center;
+}
 
 p {
     font-family: Verdana, sans-serif, Helvetica;
