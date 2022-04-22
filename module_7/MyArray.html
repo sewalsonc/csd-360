@@ -14,7 +14,7 @@
         rel="stylesheet" />
     </head>
     <body>
-        <!--Headers and a description of the dice game-->
+        <!--Headers and a description of the code-->
         <h2>JavaScript Arrays -- Looping and Sorting</h2>
         <h4>by Chris Sewalson</h4>
         <h3>Looping and Sorting with JavaScript</h3>
@@ -31,14 +31,14 @@
             <h4>My Favorite Cars</h4>
         <p id="Cars">
 
-
+            <!--JavaScript code to create my array and print it our forward and in reverse-->
             <script>
                 let cars = ["1971 Nova", "1970 Chevelle", "1983 Camaro", 
                 "1970 LeMans", "1971 Ford Torino Gt", "1967 Ford Galaxy", 
                 "1974 Nova", "1973 Mustang Mach 1", "1967 Mustang Coup", 
                 "1973 Charger", "1972 Charger"];
                 
-                
+                // Writing and creating list
                 document.write("<ul>");
                 for (let i = 0; i < cars.length; i++){
                     document.write("<li>" + cars[i] + "</li>");
@@ -47,8 +47,10 @@
                             
                 document.write("<h4>The list - newest first!</h4>");
 
+                // Reversing list
                 cars.reverse();
-
+                
+                // Printing reverse list
                 
                 document.write("<ul>");
                 for (let i = 0; i < cars.length; i++){
