@@ -40,44 +40,44 @@
         
         <div id="Tabl">
             <h3>Table of Numbers 4 - 14 with Other Math Results</h3>
+        </div>
 
             <!-- Creating the table -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Base Value</th>
-                        <th>Sq Root</th>
-                        <th>Power of 2</th>
-                        <th>Power of 3</th>
-                    </tr>
-                </thead>
-                <tbody id='tabNum'></tbody>
-            </table>
-        
-        <!-- Filling up table contents -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Base Value</th>
+                    <th>Sq Root</th>
+                    <th>Power of 2</th>
+                    <th>Power of 3</th>
+                </tr>
+            </thead>
+            <tbody id='tabNum'></tbody>
+        </table>
+    
+    <!-- Filling up table contents -->
 
-            <script>
-                
-                let baseNums = [];
-                for(let i = 4; i <= 14; i++){
-                    baseNums.push(i);
-                }
-                            
-                let tabNums = document.getElementById("tabNum");
-                baseNums.forEach( numResult => {
-                    let rows = tabNums.insertRow();
-                    let baseNums = rows.insertCell(0);
-                    baseNums.innerHTML = numResult;
-                    let sqRoot = rows.insertCell(1);
-                    sqRoot.innerHTML = Math.sqrt(numResult).toFixed(2);
-                    let sqNum = rows.insertCell(2);
-                    sqNum.innerHTML = Math.pow(numResult, 2);
-                    let cbNum = rows.insertCell(3);
-                    cbNum.innerHTML = Math.pow(numResult, 3);
-                })
-                
-            </script>
-        </div>
+        <script>
+            
+            let baseNums = [];
+            for(let i = 4; i <= 14; i++){
+                baseNums.push(i);
+            }
+                        
+            let tabNums = document.getElementById("tabNum");
+            baseNums.forEach( numResult => {
+                let rows = tabNums.insertRow();
+                let baseNums = rows.insertCell(0);
+                baseNums.innerHTML = numResult;
+                let sqRoot = rows.insertCell(1);
+                sqRoot.innerHTML = Math.sqrt(numResult).toFixed(2);
+                let sqNum = rows.insertCell(2);
+                sqNum.innerHTML = Math.pow(numResult, 2);
+                let cbNum = rows.insertCell(3);
+                cbNum.innerHTML = Math.pow(numResult, 3);
+            })
+            
+        </script>
         <br>
 
         <!--Link back to the index page-->
