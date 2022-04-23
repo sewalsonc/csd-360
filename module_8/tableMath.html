@@ -56,27 +56,27 @@
         
         <!-- Filling up table contents -->
 
-        <script>
-            
-            let baseNums = [];
-            for(let i = 4; i <= 14; i++){
-                baseNums.push(i);
-            }
-                        
-            let tabNums = document.getElementById("tabNum");
-            baseNums.forEach( numResult => {
-                let rows = tabNums.insertRow();
-                let baseNums = rows.insertCell(0);
-                baseNums.innerHTML = numResult;
-                let sqRoot = rows.insertCell(1);
-                sqRoot.innerHTML = Math.sqrt(numResult).toFixed(2);
-                let sqNum = rows.insertCell(2);
-                sqNum.innerHTML = Math.pow(numResult, 2);
-                let cbNum = rows.insertCell(3);
-                cbNum.innerHTML = Math.pow(numResult, 3);
-            })
-            
-        </script>
+            <script>
+                
+                let baseNums = [];
+                for(let i = 4; i <= 14; i++){
+                    baseNums.push(i);
+                }
+                            
+                let tabNums = document.getElementById("tabNum");
+                baseNums.forEach( numResult => {
+                    let rows = tabNums.insertRow();
+                    let baseNums = rows.insertCell(0);
+                    baseNums.innerHTML = numResult;
+                    let sqRoot = rows.insertCell(1);
+                    sqRoot.innerHTML = Math.sqrt(numResult).toFixed(2);
+                    let sqNum = rows.insertCell(2);
+                    sqNum.innerHTML = Math.pow(numResult, 2);
+                    let cbNum = rows.insertCell(3);
+                    cbNum.innerHTML = Math.pow(numResult, 3);
+                })
+                
+            </script>
         </div>
         <br>
 
