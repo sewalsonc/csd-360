@@ -25,6 +25,7 @@ table, td {
     font-size: small;
     margin-left: auto;
     margin-right: auto;
+    background-color:bisque;
 }
 th {
     width: 150px;
