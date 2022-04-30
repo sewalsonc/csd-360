@@ -1,0 +1,23 @@
+/*
+ * Chris Sewalson
+ * CSS for CSD360-Module9 Arrays page
+ * 4/30/2022
+*/
+
+body {
+    padding: 5%;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+p {
+    font-family: Verdana, sans-serif, Helvetica;
+    margin: 3%;
+}
+li{
+    margin: 10px;
+    font-style: italic;
+    font-size: smaller;
+}
+

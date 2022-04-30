@@ -1,0 +1,70 @@
+<!--
+    Chris Sewalson - 4/30/2022
+    module 9 html assigment - Perform two functions each with the push
+    of a button.
+    1. Generate and display an array of positive, zero and negative numbers
+    2. Count the number of each, the positive, zero and negative numbers
+        in the array.
+-->
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="arrays.css" type="text/css"
+        rel="stylesheet" />
+    </head>
+    <body>
+        <!--Headers and a description of the code-->
+        <h2>JavaScript Arrays & Counters -- Array Counter</h2>
+        <h4>by Chris Sewalson</h4>
+        <h3>Counting Element Types within an Array</h3>
+        <p id="Desc">
+            <h5>
+                For this assignment we are to create a function that takes 
+                an array as the parameter.  The array should contain negative 
+                numbers, zeros and postive numbers.<br><br/>
+                <ol>
+                    <li>Counts the number of negative numbers in the array.</li>
+                    <li>Counts the number of zero's in the array.</li>
+                    <li>Counts the number of positive numbers in the array.</li>
+                </ol>
+            </h5>
+        </p> 
+
+        <hr>
+        <br />
+    <!-- Buttons to call the JavaScript functions -->
+        <p>
+            Click the button below to generate and display a random
+             array of 100 numbers.   
+        </p>
+
+        <button type = "button" onclick = "randomArrays()">Generate Random Array</button>
+
+        <p id='printer'></p>
+
+        <hr>
+        <br />
+
+        <p>
+            Click the button below to count the number of 
+            positive, zero and negative numbers in the array
+            and display the results.
+        </p>
+
+        <button type = "button" onclick = "getNums()">Count -, + and zeros</button>
+
+        <p id='counter'></p>     
+
+        <br>
+
+        <!-- Link to JavaScript file-->
+        <script src='array.js'></script>
+    
+
+        <!--Link back to the index page-->
+        <a href="..\index.html">Back to Index Page</a></li>
+    </body>
+</HTML>
