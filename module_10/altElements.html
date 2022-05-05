@@ -1,0 +1,76 @@
+<!--
+    Chris Sewalson -5/5/2022
+    module 10 html assigment - Create a page with images or elements 
+    that will be altered in response to user events such as button clicks 
+    or cursor hovering.
+-->
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="module_3.css" type="text/css"
+        rel="stylesheet" />
+    </head>
+    <body>
+        <!--Headers and a description of the code-->
+        <h2>JavaScript Elements Alterations -- Altering Elements</h2>
+        <h4>by Chris Sewalson</h4>
+        <h3>Using Events to Alter the Way Elements are Displayed</h3>
+        <p id="Desc">
+            <h5>
+                For this assignment we are to create a webpage with multiple 
+                elements that will be altered by user events such as:<br><br/>
+                <ol>
+                    <li>Mouse Button Clicks.</li>
+                    <li>When a Mouse Button is Pressed or Released</li>
+                    <li>Hovering over Elements on a Page.</li>
+                    <li>When a Keyboard Key is Pressed.</li>
+                </ol>
+            </h5>
+        </p> 
+
+        <hr>
+        <br />
+    <!-- Description of images -->
+        <p>
+            The images below are a couple of my favorite things. They are two of the 
+            things that I like to spend my time with or doing.<br> <br />
+            The first image is of an apple orchard.  Orchards and other green spaces 
+            such as this can bring you serenity and mental clarity by just being in them.
+            <br>Hover your mouse over the image of the orchard to view the photo.
+        </p>
+
+        <div>
+            <a href=#
+               onmouseover="orchard.src='Apple-OrangeA.jpg';"
+               onmouseout= "orchard.src='Apple-OrangeB.jpg';"
+            >
+              <img border = 0 name = "orchard" src = "Apple-OrangeB.jpg">
+            </a>
+        </div>
+        <br />
+
+        <p>
+            The second picture shown below is of a 1970 Chevy Chevelle.  I love 
+            classic cars and have had many over the years.  Probably one of my 
+            favorite things about classic cars is fixing them up and getting 
+            back on the road.<br>Click on the image below to change the image.
+        </p>
+   
+        <div>
+            <a href=#
+               onmousedown="classics.src='RedChevelleB.jpg';"
+               onmouseup= "classics.src='RedChevelle.jpg';"
+            >
+              <img border = 0 name = "classics" src = "RedChevelle.jpg" width="900" height="600">
+            </a>
+        </div>
+        <br />
+
+        <!--Link back to the index page-->
+        <a href="..\index.html">Back to Index Page</a></li>
+        <br><br />
+    </body>
+</HTML>
