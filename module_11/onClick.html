@@ -1,0 +1,92 @@
+<!--
+    Chris Sewalson - 5/10/2022 - CSD360M11Assignment
+    This code creates a webpage that displays 8 images.  To view all 
+    images the user must either click the previous or next button.  
+-->
+
+<!DOCTYPE HTMLPUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'
+'http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd'>
+
+<HTML xmlns='http://www.w3.org/1999/xhtml'>
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="..//module_3.css" type="text/css"
+        rel="stylesheet" />
+    </head>
+    <body>
+        <!--Headers and a description of the code-->
+        <h2>JavaScript DOM -- Document Object Model</h2>
+        <h4>by Chris Sewalson</h4>
+        <h3>Using Events to Alter the DOM.  OnClick button events to select the next or 
+            previous image.
+        </h3>
+        <p id="Desc">
+            <h5>
+                Click the Previous or Next button to view many of the  
+                classic cars that we have owned.  They 
+                are:<br><br/>
+                <ol>
+                    <li>1967 Ford Fairlane</li>
+                    <li>1970 Ford Torino GT</li>
+                    <li>1973 Dodge Charger SE</li>
+                    <li>1967 Chevy Impala</li>
+                    <li>1967 Ford Mustange Coupe</li>
+                    <li>1986 Pontiac Trans Am</li>
+                    <li>1991 Pontiac FireBird Convertible</li>
+                    <li>1972 Dodge Charger</li>
+                </ol>
+            </h5>
+        </p> 
+
+        <hr>
+        <br />
+    <!-- Directions and buttons -->
+        <p>
+            <h4>Use the Previous or Next button to view all pictures.</h4>
+
+            <button onclick="prv()" id="btn2">Previous</button>
+            <button onclick="nxt()" id="btn1">Next</button><br><br />            
+
+
+            <img src="2.FordFair.jpg" id="imageView" alt="The picture is not available" width="500" height="350">
+        </p>
+
+        <!-- JavaScript with image links and next and previous button functions-->
+        <script>
+            var images = new Array("2.FordFair.jpg", "3.FordTor.jpg", "5.Charger1.jpg", "6.Impala.jpg", 
+                            "7.Mustang.jpg", "8.TA.jpg", "9.FireBird.jpg", "10.Charger2.jpg");
+            
+            var imgElement = document.getElementById("imageView")
+            var i = 0;
+
+            var imgLength = images.length;
+
+                function nxt(){
+                    if(i < imgLength-1)
+                    {i++;}
+                    else{
+                        i=0;
+                    }
+                    imgElement.src = images[i];
+                }
+
+                function prv(){
+                    if(i > 0){
+                        i--;
+                    }
+                    else{
+                        i = imgLength-1;
+                    }
+
+                    imgElement.src = images[i];
+                }
+            
+        </script>
+        <br />
+
+        <!--Link back to the index page-->
+        <a href="..\index.html">Back to Index Page</a></li>
+        <br><br />
+    </body>
+</HTML>
